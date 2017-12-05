@@ -2,9 +2,35 @@
 <html>
 <head>
 	<title> Example Website</title>
-	
+	<script type="text/javascript">
+		document.onkeydown = function(e) {
+  if(event.keyCode == 123) {
+     return false;
+  }
+  if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+     return false;
+  }
+  if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+     return false;
+  }
+  if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+     return false;
+  }
+}
+	document.onmousedown=disableclick;
+	status= "What a dirty cheater...";
+	function disableclick(event)
+	{
+		if (event.button==2)
+		{
+			alert(status);
+			return false;
+		}
+	}
+	</script>
 </head>
 <body>
+	
 	<img src="https://static.pexels.com/photos/33109/fall-autumn-red-season.jpg" alt="This is a test" height="324px" width="576px" >
 
 	<table cellpadding="10px" style="border-collapse: collapse;">
