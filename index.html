@@ -5,15 +5,19 @@
 	<script type="text/javascript">
 		document.onkeydown = function(e) {
   if(event.keyCode == 123) {
-     return false;
+	document.getElementById("this").innerHTML = "";
+    return false;
   }
   if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
-     return false;
+  	document.getElementById("this").innerHTML = "";
+    return false;
   }
   if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
-     return false;
+	document.getElementById("this").innerHTML = "";
+    return false;
   }
   if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+	document.getElementById("this").innerHTML = "";
      return false;
   }
 }
@@ -53,7 +57,7 @@
 			<td> 9th </td>
 		</tr>
 		<tr>
-			<td> Watch Thor Ragnorok</td>
+			<td> Stay SCHWOKE</td>
 			<td> Math test</td>
 			<td> English presentation</td>
 			<td> Comsci Homework</td>
